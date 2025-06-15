@@ -1,2 +1,2 @@
-# sotun
+# SEPAR
 Air Defense

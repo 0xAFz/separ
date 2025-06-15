@@ -63,7 +63,7 @@ func main() {
 
 	var wg sync.WaitGroup
 
-	fmt.Printf("[%s] [SYSTEM 🔥] Suton is starting...\n", timestamp())
+	fmt.Printf("[%s] [SYSTEM 🔥] Separ is starting...\n", timestamp())
 
 	go radar(radarChan)
 	go weapon(trackChan, shotChan)
@@ -89,7 +89,7 @@ func radar(radarChan chan Enemy) {
 		fmt.Printf("[%s] [RADAR 📡][INFO] Enemy#%03d located @ (X=%02d, Y=%02d)\n", timestamp(), e.ID, e.X, e.Y)
 
 		radarChan <- e
-		time.Sleep(time.Millisecond * 500)
+		time.Sleep(time.Millisecond * 100)
 	}
 }
 
